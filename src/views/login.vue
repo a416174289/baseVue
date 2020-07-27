@@ -10,12 +10,7 @@
       return {}
     },
     methods: {
-      //获取用户信息
-      getInfo(){
-        this.$store.dispatch('userInfoMoudle/getUserInfo',{}).then( res =>{
-            if(res.data.code ==200){}
-        })
-      }
+      
     },
     created(){
       this.getInfo();
