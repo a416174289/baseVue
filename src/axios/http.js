@@ -95,7 +95,7 @@ function form(url, params) {
             .then(res => {
                 resolve(res);
             })
-            .catch(err => {o
+            .catch(err => {
                 reject(err)
             })
     })

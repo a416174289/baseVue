@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import login from '@v/login.vue'
 import index from '@v/index.vue'
-
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 Vue.use(VueRouter)
 
 const routes = [
@@ -48,5 +49,8 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
-
+// router.beforeEach((to, from, next) => {
+//   NProgress.start()
+//   next()
+// })
 export default router

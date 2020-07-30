@@ -19,7 +19,7 @@ files.keys().forEach(filePath => {
 
         Mock.mock(new RegExp('^' + api), method, mockInfo);
 
-        // console.log(`${method}|${api}`, '->mock模板：', mockInfo);
+        console.log(`${method}|${api}`, '->mock模板：', mockInfo);
     }
 });
 console.log('mockApiEnd.');

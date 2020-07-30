@@ -15,10 +15,10 @@ export default {
     actions: {
         // 接口测试 用户信息
         getUserInfo({}, params){
-            return get(basicApi.user.getUserInfo, params).then(res => {
+            return post(basicApi.user.getUserInfo, params).then(res => {
                 return res
             });
-        },
+        }
     },
     mutations: {},
 };

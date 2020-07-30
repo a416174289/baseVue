@@ -53,7 +53,7 @@ let installMockApi = (dir, uri = '') => {
           router[method](api, function (req, res) {
             res.json(Mock.mock(mockInfo))
           });
-          // console.log(`api: ${method}|${api}`);
+          console.log(`api: ${method}|${api}`);
         }
       }
     })
